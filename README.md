@@ -2,7 +2,7 @@
 Web scraping script for etherscan.io. Retrieves block data listed on https://etherscan.io/blocks.
 
 ## etherscan_scrape.py
-Scrapes block data from etherscan
+Scrapes block data from etherscan\\
 output: blocks.csv
 
 ## txn_scrape.py
