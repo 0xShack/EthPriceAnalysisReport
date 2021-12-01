@@ -7,3 +7,4 @@ output: blocks.csv
 
 ## txn_scrape.py
 Scrapes transactions from each row in etherscan and appends to blocks.csv a list of list of tuples with (method_name, to_address, from_address, value)
+output: new_blocks.csv
