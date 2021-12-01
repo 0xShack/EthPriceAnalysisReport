@@ -28,6 +28,9 @@ def runScrape():
     print("starting scrape...")
     df = pd.read_csv('C:/.../blocks.csv') # set file path
     print("Data set is loaded!")
+    
+    # turns timestamp into a datetime object based on extract_time - timestamp
+    # since etherscan gives time data in terms of 'x days y hrs z mins w secs ago'
     timestamp = df['timestamp']
     no_ago = r'(?<=.)ago'
     timestamp = timestamp.apply(lambda x: re.sub(no_ago, '', x))
