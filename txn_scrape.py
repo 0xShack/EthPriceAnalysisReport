@@ -55,6 +55,8 @@ def runScrape():
     print("starting txn content scrape...")
 
     for i, url in enumerate(crawl_list):
+        # scrapes txns from every 97th block
+        # remove this if you wish to scrape all blocks, but be prepared to wait several weeks for your data
         if i % 97 != 0:
             txn_content.append([])
             continue
